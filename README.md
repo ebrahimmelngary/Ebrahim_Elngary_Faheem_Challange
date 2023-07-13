@@ -40,6 +40,7 @@ npm run ios
 
 # OR using Yarn
 yarn ios
+cd ios && pod install
 ```
 
 If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
@@ -77,3 +78,31 @@ To learn more about React Native, take a look at the following resources:
 - [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+
+### Run Unit Test
+
+- run `yarn run test` to run all unit test suites.
+
+### Used dependencies
+
+```json
+   "@babel/core": "^7.20.0",
+    "@babel/preset-env": "^7.20.0",
+    "@babel/runtime": "^7.20.0",
+    "@react-native/eslint-config": "^0.72.2",
+    "@react-native/metro-config": "^0.72.9",
+    "@testing-library/react-native": "^12.1.2",
+    "@tsconfig/react-native": "^3.0.0",
+    "@types/react": "^18.0.24",
+    "@types/react-test-renderer": "^18.0.0",
+    "babel-jest": "^29.2.1",
+    "eslint": "^8.19.0",
+    "jest": "^29.2.1",
+    "metro-react-native-babel-preset": "0.76.7",
+    "prettier": "^2.4.1",
+    "react-test-renderer": "18.2.0",
+    "typescript": "4.8.4"
+```
+### Demo
+![Simulator Screen Recording - iPhone 14 Pro Max - 2023-07-13 at 18 13 42](https://github.com/ebrahimmelngary/Ebrahim_Elngary_Faheem_Challange/assets/26544537/dfbd7412-65db-46ab-84ce-a1eccc0043bb)
+
