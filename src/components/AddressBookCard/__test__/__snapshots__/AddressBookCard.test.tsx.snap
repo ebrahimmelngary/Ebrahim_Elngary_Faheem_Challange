@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddressBookCard should match snapshot 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#bfbfbf",
+      "borderRadius": 8,
+      "flex": 1,
+      "flexDirection": "row",
+      "marginBottom": 10,
+      "marginHorizontal": 16,
+      "padding": 10,
+    }
+  }
+>
+  <View
+    style={
+      [
+        {
+          "overflow": "hidden",
+        },
+        {
+          "borderRadius": 30,
+          "height": 30,
+          "width": 30,
+        },
+      ]
+    }
+  >
+    <FastImageView
+      defaultSource={null}
+      resizeMode="contain"
+      source={
+        {
+          "uri": undefined,
+        }
+      }
+      style={
+        {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      {
+        "paddingHorizontal": 10,
+      }
+    }
+  >
+    <Text>
+      undefined undefined undefined
+    </Text>
+    <Text />
+  </View>
+</View>
+`;
