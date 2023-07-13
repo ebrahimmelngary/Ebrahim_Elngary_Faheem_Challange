@@ -3,8 +3,8 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 # Getting Started
 
 ### Demo
-![Simulator Screen Recording - iPhone 14 Pro Max - 2023-07-13 at 18 13 42](https://github.com/ebrahimmelngary/Ebrahim_Elngary_Faheem_Challange/assets/26544537/dfbd7412-65db-46ab-84ce-a1eccc0043bb)
 
+![Simulator Screen Recording - iPhone 14 Pro Max - 2023-07-13 at 18 23 32](https://github.com/ebrahimmelngary/Ebrahim_Elngary_Faheem_Challange/assets/26544537/dadd5ece-2996-4224-badc-ff03cd045608)
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
