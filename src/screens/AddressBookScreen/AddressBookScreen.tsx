@@ -69,7 +69,7 @@ export default function AddressBookScreen() {
 
   const handleSelectedFilter = (value: string) => {
     setSelectedOption(value);
-    listRef?.current?.scrollToOffset({ animated: true, offset: 10 });
+    listRef?.current?.scrollToOffset({ animated: true, offset: 0 });
   };
 
   const headerComponent = () => {
