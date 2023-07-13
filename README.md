@@ -2,6 +2,10 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 # Getting Started
 
+### Demo
+![Simulator Screen Recording - iPhone 14 Pro Max - 2023-07-13 at 18 13 42](https://github.com/ebrahimmelngary/Ebrahim_Elngary_Faheem_Challange/assets/26544537/dfbd7412-65db-46ab-84ce-a1eccc0043bb)
+
+
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
 ## Step 1: Start the Metro Server
@@ -103,6 +107,4 @@ To learn more about React Native, take a look at the following resources:
     "react-test-renderer": "18.2.0",
     "typescript": "4.8.4"
 ```
-### Demo
-![Simulator Screen Recording - iPhone 14 Pro Max - 2023-07-13 at 18 13 42](https://github.com/ebrahimmelngary/Ebrahim_Elngary_Faheem_Challange/assets/26544537/dfbd7412-65db-46ab-84ce-a1eccc0043bb)
 
