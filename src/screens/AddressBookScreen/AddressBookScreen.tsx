@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import axios, { AxiosResponse } from 'axios';
 import { ActivityIndicator, FlatList, View, Text } from 'react-native';
 
@@ -60,7 +60,7 @@ export default function AddressBookScreen() {
     }
   };
 
-  useEffect(() => {
+  useMemo(() => {
     const filteredData = addressBookData?.filter(
       item => item.gender === selectedOption,
     );
