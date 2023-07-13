@@ -68,14 +68,20 @@ export default function AddressBookScreen() {
   const headerComponent = () => {
     return (
       <View style={styles.headerContainer}>
-        {filters?.map(item => (
-          <RadioWithLabel
-            key={item.id}
-            title={item.title}
-            onPress={() => setSelectedOption(item.value)}
-            isActive={item.value === selectedOption}
-          />
-        ))}
+        <View style={styles.headerTitles}>
+          <Text style={styles.headerTitle}>Address Book</Text>
+          <Text>Hello Trey!</Text>
+        </View>
+        <View style={styles.innerContainer}>
+          {filters?.map(item => (
+            <RadioWithLabel
+              key={item.id}
+              title={item.title}
+              onPress={() => setSelectedOption(item.value)}
+              isActive={item.value === selectedOption}
+            />
+          ))}
+        </View>
       </View>
     );
   };

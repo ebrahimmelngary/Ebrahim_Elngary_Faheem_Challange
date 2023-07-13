@@ -5,12 +5,25 @@ export default StyleSheet.create({
     flex: 1,
     backgroundColor: COLORS.white,
   },
+  headerContainer: {
+    flex: 1,
+  },
+  headerTitle: {
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
+  headerTitles: {
+    backgroundColor: COLORS.lightOrange,
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 10,
+  },
   loader: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  headerContainer: {
+  innerContainer: {
     flexDirection: 'row',
     justifyContent: 'space-around',
     paddingVertical: 10,
