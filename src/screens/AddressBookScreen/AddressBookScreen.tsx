@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import axios, { AxiosResponse } from 'axios';
 import { ActivityIndicator, FlatList, View, Text } from 'react-native';
 
@@ -11,6 +11,8 @@ import { filters } from './FilterOptions';
 
 export default function AddressBookScreen() {
   const [page, setPage] = useState<number>(1);
+  const listRef = useRef<FlatList>(null);
+
   const [addressBookData, setAddressBookData] = useState<Result[]>([]);
   const [selectedOption, setSelectedOption] = useState<string>('all');
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -65,6 +67,11 @@ export default function AddressBookScreen() {
     setFilteredAddressBookData(filteredData);
   }, [addressBookData, selectedOption]);
 
+  const handleSelectedFilter = (value: string) => {
+    setSelectedOption(value);
+    listRef?.current?.scrollToOffset({ animated: true, offset: 10 });
+  };
+
   const headerComponent = () => {
     return (
       <View style={styles.headerContainer}>
@@ -77,7 +84,7 @@ export default function AddressBookScreen() {
             <RadioWithLabel
               key={item.id}
               title={item.title}
-              onPress={() => setSelectedOption(item.value)}
+              onPress={() => handleSelectedFilter(item.value)}
               isActive={item.value === selectedOption}
             />
           ))}
@@ -93,6 +100,7 @@ export default function AddressBookScreen() {
   return (
     <View style={styles.container}>
       <FlatList
+        ref={listRef}
         data={
           filteredAddressBookData?.length > 0
             ? filteredAddressBookData
